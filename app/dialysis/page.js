@@ -3,7 +3,7 @@ import React from "react";
 export default function Dialysis() {
   return (
     <div className="flex flex-col">
-      <div className="p-2 justify-items-center">
+      <div className="flex p-2 justify-center">
         <h1 className="p-5 text-4xl font-extrabold">Dialysis Certification</h1>
       </div>
       <div className="p-5">
