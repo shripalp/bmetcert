@@ -1,7 +1,10 @@
 import "./globals.css";
-import styles from "./layout.module.css";
+//import styles from "./layout.module.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "BMET App",
@@ -11,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className}>
         <header className="flex flex-col bg-[#460305]">
           <div className="flex justify-center">
             <Image
