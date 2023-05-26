@@ -7,7 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: { primary: "#0A192F", secondary: "#F97316", tertiary: "#54D6BB" },
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+      colors: {
+        primary: "#0A192F",
+        secondary: "#F97316",
+        tertiary: "#54D6BB",
+        "primary-orange": "#FF5722",
+      },
     },
   },
 

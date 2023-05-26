@@ -1,6 +1,7 @@
 import "./globals.css";
 //import styles from "./layout.module.css";
 import Navbar from "@/components/Navbar";
+import Nav from "@/components/Nav";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
@@ -16,6 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <header className="flex flex-col bg-[#460305]">
+          <div>
+            <Nav />
+          </div>
           <div className="flex justify-center">
             <Image
               src="/images/TitleBanner.gif"
