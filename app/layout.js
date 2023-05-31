@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+import Provider from "@/components/Provider";
 
 export const metadata = {
   title: "BMET App",
@@ -16,24 +17,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="flex flex-col bg-[#460305]">
-          <div>
-            <Nav />
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src="/images/TitleBanner.gif"
-              alt="logo"
-              width={800}
-              height={300}
-            ></Image>
-          </div>
-          <div>
-            <Navbar />
-          </div>
-        </header>
+        <Provider>
+          <header className="flex flex-col bg-[#460305]">
+            <div>
+              <Nav />
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="/images/TitleBanner.gif"
+                alt="logo"
+                width={800}
+                height={300}
+              ></Image>
+            </div>
+            <div>
+              <Navbar />
+            </div>
+          </header>
 
-        <div>{children}</div>
+          <div>{children}</div>
+        </Provider>
       </body>
     </html>
   );

@@ -28,8 +28,8 @@ export default function Nav() {
           <div className="flex gap-3 md:gap-5">
             <Image
               src="/images/cdt_logo.gif"
-              width={50}
-              height={50}
+              width={37}
+              height={37}
               className="rouded-full text-white"
               alt="profile"
             />
@@ -86,6 +86,23 @@ export default function Nav() {
                 >
                   Admin Panel
                 </Link>
+                <Link
+                  href="/profile"
+                  className="dropdown_link text-white"
+                  onClick={() => setToggleDropDown(false)}
+                >
+                  My profile
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setToggleDropDown(false);
+                    signOut();
+                  }}
+                  className="mt-5 w-full black_btn text-white"
+                >
+                  Sign Out
+                </button>
               </div>
             )}
           </div>
