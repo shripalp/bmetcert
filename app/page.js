@@ -1,3 +1,4 @@
+import Feed from "@/components/Feed";
 export default function Home() {
   return (
     <main>
@@ -16,6 +17,9 @@ export default function Home() {
           >
             Current Members List (2023)
           </a>
+          <div>
+            <Feed />
+          </div>
         </div>
       </div>
     </main>
