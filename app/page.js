@@ -1,4 +1,5 @@
-import Feed from "@/components/Feed";
+import MembersFeed from "@/components/MembersFeed";
+
 export default function Home() {
   return (
     <main>
@@ -17,8 +18,8 @@ export default function Home() {
           >
             Current Members List (2023)
           </a>
-          <div>
-            <Feed />
+          <div className="flex flex-col">
+            <MembersFeed />
           </div>
         </div>
       </div>

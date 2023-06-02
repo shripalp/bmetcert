@@ -1,4 +1,5 @@
 import React from "react";
+import BoardFeed from "@/components/BoardFeed";
 
 export default function Contact() {
   return (
@@ -17,6 +18,9 @@ export default function Contact() {
           would appreciate help. There are short term and longer term activities
           available. Please contact the board for more information.
         </p>
+      </div>
+      <div>
+        <BoardFeed />
       </div>
     </div>
   );

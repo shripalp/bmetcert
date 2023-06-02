@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const Feed = () => {
+const MembersFeed = () => {
   const [members, setMembers] = useState({});
 
   const fetchMembers = async () => {
@@ -20,10 +20,10 @@ const Feed = () => {
   return (
     <div>
       {Object.values(members).map((member, i) => {
-        return <li key={i}>{member.number}</li>;
+        return <li key={i}>{member.firstname}</li>;
       })}
     </div>
   );
 };
 
-export default Feed;
+export default MembersFeed;
