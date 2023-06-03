@@ -1,5 +1,3 @@
-import MembersFeed from "@/components/MembersFeed";
-
 export default function Home() {
   return (
     <main>
@@ -16,11 +14,14 @@ export default function Home() {
             href="/2023_Members_List.pdf"
             target="_blank"
           >
-            Current Members List (2023)
+            Current Members List (2023) (new page)
           </a>
-          <div className="flex flex-col">
-            <MembersFeed />
-          </div>
+          <a
+            className="text-blue-800 font-bold hover:text-xl visited:text-purple-600"
+            href="/members"
+          >
+            Current Members List (2023) (dynamic)
+          </a>
         </div>
       </div>
     </main>

@@ -9,7 +9,7 @@ const BoardFeed = () => {
       "https://us-central1-express-rest-api-276b6.cloudfunctions.net/api/boardmembers"
     );
     const data = await response.json();
-    console.log("data is:", data);
+    //console.log("data is:", data);
     setMembers(data);
   };
 
