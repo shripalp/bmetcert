@@ -50,7 +50,7 @@ function AddMember() {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="firstname"
+              htmlFor="firstname"
             >
               First Name
             </label>
@@ -69,7 +69,7 @@ function AddMember() {
           <div className="w-full md:w-1/2 px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="lastname"
+              htmlFor="lastname"
             >
               Last Name
             </label>
@@ -88,7 +88,7 @@ function AddMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="certification"
+              htmlFor="certification"
             >
               Certification
             </label>
@@ -104,7 +104,7 @@ function AddMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="status"
+              htmlFor="status"
             >
               Status
             </label>
@@ -131,7 +131,7 @@ function AddMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="province"
+              htmlFor="province"
             >
               Province
             </label>

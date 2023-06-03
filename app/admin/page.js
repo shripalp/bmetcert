@@ -8,7 +8,7 @@ function Admin() {
       <div className="m-5">
         <AddMember />
       </div>
-      <div className="m-5">
+      <div className="m-5 gap-5">
         <AddBoardMember />
       </div>
     </div>

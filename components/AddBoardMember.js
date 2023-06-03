@@ -56,7 +56,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="firstname"
+              htmlFor="firstname"
             >
               First Name
             </label>
@@ -75,7 +75,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/2 px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="lastname"
+              htmlFor="lastname"
             >
               Last Name
             </label>
@@ -91,7 +91,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="boardtitle"
+              htmlFor="boardtitle"
             >
               boardtitle
             </label>
@@ -107,7 +107,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="certification"
+              htmlFor="certification"
             >
               Certification
             </label>
@@ -126,7 +126,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="jobtitle"
+              htmlFor="jobtitle"
             >
               Job Title
             </label>
@@ -142,7 +142,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="employer"
+              htmlFor="employer"
             >
               Employer
             </label>
@@ -159,7 +159,7 @@ function AddBoardMember() {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="address"
+              htmlFor="address"
             >
               Address
             </label>
