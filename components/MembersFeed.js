@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Member from "./member";
 
 const MembersFeed = () => {
   const [members, setMembers] = useState({});
@@ -19,29 +20,19 @@ const MembersFeed = () => {
 
   return (
     <table className="border-separate border-spacing-2 border border-slate-400 w-full">
-      <caption className="caption-top">Board members</caption>
+      <caption className="caption-top">members</caption>
       <thead>
         <tr>
           <th className="border border-slate-300">Fistname</th>
           <th className="border border-slate-300">Lastname</th>
           <th className="border border-slate-300">Certification</th>
           <th className="border border-slate-300">Status</th>
-          <th className="border border-slate-300">Provincer</th>
+          <th className="border border-slate-300">Province</th>
         </tr>
       </thead>
       <tbody>
         {Object.values(members).map((member, i) => {
-          return (
-            <tr key={i}>
-              <td className="border border-slate-300">{member.firstname}</td>
-              <td className="border border-slate-300">{member.lastname}</td>
-              <td className="border border-slate-300">
-                {member.certification}
-              </td>
-              <td className="border border-slate-300">{member.status}</td>
-              <td className="border border-slate-300">{member.province}</td>
-            </tr>
-          );
+          return <Member member={member} key={i} />;
         })}
       </tbody>
     </table>
