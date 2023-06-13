@@ -78,6 +78,9 @@ function Navbar() {
                 <li className="text-white">
                   <Link href="/links">Links</Link>
                 </li>
+                <li className="text-white">
+                  <Link href="/admin">Admin</Link>
+                </li>
               </ul>
             </div>
           </div>
