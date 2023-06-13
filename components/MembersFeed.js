@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Member from "./member";
+import Member from "./Member";
 
 const MembersFeed = () => {
   const [members, setMembers] = useState({});

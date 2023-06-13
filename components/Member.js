@@ -10,7 +10,7 @@ function Member(props) {
       }
     );
   };
-  handleDelete();
+  //handleDelete();
 
   return (
     <tr>
