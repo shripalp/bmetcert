@@ -16,7 +16,7 @@ const MembersFeed = () => {
 
   useEffect(() => {
     fetchMembers();
-  }, []);
+  }, [members]);
 
   return (
     <table className="border-separate border-spacing-2 border border-slate-400 w-full">

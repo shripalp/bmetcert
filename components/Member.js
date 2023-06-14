@@ -1,7 +1,10 @@
 "use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 
 function Member(props) {
+  const router = useRouter();
   const handleDelete = () => {
     fetch(
       `https://us-central1-express-rest-api-276b6.cloudfunctions.net/api/members/${props.member.id}`,
@@ -9,6 +12,8 @@ function Member(props) {
         method: "DELETE",
       }
     );
+
+    router.refresh();
   };
   //handleDelete();
 

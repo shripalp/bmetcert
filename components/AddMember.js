@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 function AddMember() {
+  const router = useRouter();
   const [firstname, setFirstname] = React.useState("");
   const [lastname, setLastname] = React.useState("");
   const [certification, setCertification] = React.useState("");
@@ -42,6 +44,7 @@ function AddMember() {
     setProvince("");
     setCertification("");
     setStatus("");
+    router.push("/members");
   };
   return (
     <div>

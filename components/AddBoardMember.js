@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-
+import { useRouter } from "next/navigation";
 function AddBoardMember() {
+  const router = useRouter();
   const [firstname, setFirstname] = React.useState("");
   const [lastname, setLastname] = React.useState("");
   const [certification, setCertification] = React.useState("");
@@ -48,6 +49,7 @@ function AddBoardMember() {
     setCertification("");
     setAddress("");
     setEmployer("");
+    router.push("/about");
   };
   return (
     <div>
